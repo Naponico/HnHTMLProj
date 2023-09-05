@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <container>
+            <nav>
+                <a href="index.html"><img src="/images/Mic_Logo.png" alt="Logo" class="navlogo"></a>
+                <div >
+                    <span>Master Mixers</span>
+                </div>
+                <div>
+                    <a href="#"> <span>Nouveautées</span></a>
+                </div>
+                <div class="drop">
+                    <a href="shop.html"> <span>Boutique</span></a>
+                    <ul class="options">
+                        <li>
+                            <a href="Devis"><span>Commandez un devis</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="drop">
+                    <span>A propos</span>
+                    <ul class="options">
+                        <li>
+                            <a href="aboutwho.html"><span>Qui sommes-nous ?</span></a>
+                        </li>
+                        <li>
+                            <a href="theTeam.html"><span>L'équipe</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="contactUs.html"><span>Nous Contacter</span></a>
+                </div>
+            </nav>
+        </container>
+        <container class="centeredcol coloredcont">
+            <h1>Nous envoyez une demande d'information : </h1>
+            <form class="aboutForm" action="http://vip.groupehn.com:20003/html/infospost.php">
+                <input class="yourclass" id="lastname" type="text" name="lastname" placeholder="Nom" required/>
+                <input class="yourclass" id="firstname" type="text" name="firstname" placeholder="Prenom" required/>
+                <input class="yourclass" id="mail" type="email" name="email" placeholder="yourmail@gmail.com"required />
+                <textarea class="yourclass" name="request" id="request" cols="66" rows="10" placeholder="Votre demande..." required></textarea>
+                <select class="yourclass" name="country" id="country" aria-placeholder="Votre pays" required>
+                    <option default>-- Choisissez votre pays --</option>
+                    <option>France</option>   
+                    <option>Allemagne</option>
+                    <option>Belgique</option>
+                    <option>Suisse</option>
+                </select>
+                <input type="submit" class="submitButton">
+            </form>
+        </container>
+    </body>
+</html>

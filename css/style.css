@@ -1,0 +1,207 @@
+:root{
+    --first-color:#E5D9F2;
+    --second-color:#F5EFFF;
+    --thirth-color:#CDC1FF;
+    --fourth-color:#A594F9;
+    --fifth-color:#7371FC;
+}
+
+body container{
+    width: 960px;
+    margin:0 auto;
+}
+
+.navlogo{
+    width: 84px;
+    height:84px;
+    background-color: var(--thirth-color);
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+nav a span{
+    font-size: 1.5em;
+    text-decoration: none;
+}
+a:link{
+    color:black;
+    font-style: none;
+    text-decoration: none;
+}
+a:visited{
+    color:black;
+}
+a:hover{
+    color:black;
+}
+
+nav a span:hover{
+    text-decoration: underline;
+}
+nav span{
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--fourth-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: inherit;
+    border: 1.5px solid black;
+}
+html{
+    display: flex;
+    justify-content: center;
+}
+
+#aboutimg{
+    border-radius:15% 0 15% 35%;
+    width: 320px;
+    height: 320px;
+    float:left;
+}
+#centereddiv{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+article p{
+    margin: 0 0 0 10px;
+    font-size: 18px;
+}
+.options{
+    display:none;
+    position:absolute;
+    z-index: 1;
+    padding: 25px;
+    margin:0;
+    background-color:var(--first-color);
+    border-radius: 0 15% 15% 15%;
+    list-style: none;
+}
+
+.drop:hover .options{
+    display:block;
+}
+.drop:hover{
+    background-color: var(--second-color);
+    padding:5px;
+    border-radius: 10px;
+}
+.options:hover{
+    display: block;
+}
+
+.teamLine{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    background-color: var(--fifth-color);
+    border-radius: 23% 0 0 23%;
+}
+.teamLine img{
+    height: 256px;
+    border-radius: 23%;
+}
+
+.teamText{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.teamTitle{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.teamName{
+    font-size: 1.42em;
+    font-style:italic;
+}
+
+.teamHistory{
+    margin-top:15px;
+    font-size:1.15em;
+}
+
+.teamHistory i{
+    font-size:0.82em;
+}
+
+.aboutForm{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+.aboutForm input,textarea,select{
+    margin-top: 10px;
+    border:none;
+    border-radius: 5px;
+    padding:2px
+}
+
+.centeredcol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.submitButton{
+    background-color: rgb(70, 221, 70);
+}
+.coloredcont{
+    background-color: var(--fifth-color);
+    border-radius: 0 0 15px 15px;
+    padding-bottom: 1em;;
+}
+.shopping{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cardimg img{
+    height:256px;
+    margin-top:10px;
+}
+
+.shoppingcard{
+    margin: 10px;
+    background-color: #A594F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    border-radius: 8px;
+    border: 1.5px solid var(--fifth-color)
+}
+
+.cardPrice button{
+    background-color: var(--first-color);
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.cardPrice button:hover{
+    background-color: rgb(167, 216, 167);
+}
+.cardtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardtext li{
+    list-style: circle;
+}
+.shoppingcard:hover{
+    background-color: var(--thirth-color);
+}
