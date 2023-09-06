@@ -4,6 +4,9 @@
     --thirth-color:#CDC1FF;
     --fourth-color:#A594F9;
     --fifth-color:#7371FC;
+    --background:#393D47;
+
+    --element-background:var(--fifth-color)
 }
 
 body container{
@@ -24,19 +27,15 @@ nav a span{
     text-decoration: none;
 }
 a:link{
-    color:black;
+    color:var(--first-color);
     font-style: none;
     text-decoration: none;
 }
 a:visited{
-    color:black;
+    color:var(--first-color);
 }
-a:hover{
-    color:black;
-}
-
 nav a span:hover{
-    text-decoration: underline;
+    text-decoration: underline solid 2px;
 }
 nav span{
     font-size: 1.5em;
@@ -48,7 +47,7 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--fourth-color);
+    background-color: var(--element-background);
     padding: 10px;
     border-radius: 10px;
     width: inherit;
@@ -57,13 +56,14 @@ nav{
 html{
     display: flex;
     justify-content: center;
+    background-color: var(--background);
 }
 
 #aboutimg{
     border-radius:15% 0 15% 35%;
     width: 320px;
     height: 320px;
-    float:left;
+    background-color: var(--first-color);
 }
 #centereddiv{
     display:flex;
@@ -80,18 +80,21 @@ article p{
     z-index: 1;
     padding: 25px;
     margin:0;
-    background-color:var(--first-color);
-    border-radius: 0 15% 15% 15%;
+    background-color:var(--fourth-color);
+    border-radius: 0 20px 20px 20px;
     list-style: none;
+}
+.drop{
+    color:var(--first-color)
 }
 
 .drop:hover .options{
     display:block;
 }
 .drop:hover{
-    background-color: var(--second-color);
-    padding:5px;
-    border-radius: 10px;
+    color:var(--first-color);
+    cursor:pointer;
+    text-decoration:underline solid 2px;
 }
 .options:hover{
     display: block;
@@ -101,7 +104,7 @@ article p{
     display: flex;
     flex-direction: row;
     margin-top: 10px;
-    background-color: var(--fifth-color);
+    background-color: var(--element-background);
     border-radius: 23% 0 0 23%;
 }
 .teamLine img{
@@ -173,25 +176,30 @@ article p{
 
 .shoppingcard{
     margin: 10px;
-    background-color: #A594F9;
+    background-color:var(--element-background);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding:5px;
     border-radius: 8px;
-    border: 1.5px solid var(--fifth-color)
+    border: 1.5px solid black;
 }
 
 .cardPrice button{
     background-color: var(--first-color);
-    border: 1px solid black;
-    border-radius: 2px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding:1em 3em;
+}
+.cardPrice button:hover{
+    cursor:pointer;
 }
 
-.cardPrice button:hover{
+.shoppingcard:hover button{
     background-color: rgb(167, 216, 167);
 }
+
 .cardtext{
     display: flex;
     flex-direction: column;
@@ -202,6 +210,112 @@ article p{
 .cardtext li{
     list-style: circle;
 }
+
 .shoppingcard:hover{
     background-color: var(--thirth-color);
+}
+
+.sideToSide{
+    display: flex;
+    background-color: var(--element-background);
+    border-radius:15% 15px 15px 35%;
+}
+
+.futureproductgrid{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.futureproductgrid div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardTitle{
+    font-size:1.5em;
+    text-decoration: underline;
+    min-height: 2.5em;
+}
+.KnowMoreButton{
+    padding: 0.9em 7em;
+    border-radius: 5px;
+    background-color: var(--first-color);
+}
+
+.KnowMoreButton:hover{
+    cursor:pointer;
+}
+
+.futureproductgrid .cardimg img{
+    height: 412px;
+}
+
+.frontGrid{
+    margin:5px;
+    display: grid;
+    grid-template-columns: 78% 22%;
+}
+.mainArticle{
+    display: grid;
+    grid-template-columns: 55% 20em;
+    background-color: var(--element-background);
+    max-height: 25em;
+}
+
+.mainArticle img{
+    width: 400px;
+}
+
+.mainArticle a:hover{
+    text-decoration: underline solid 1px;
+}
+
+.articleList{
+    display: flex;
+    flex-direction: column;
+}
+
+.smallArticle{
+    background-color: var(--element-background);
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.smallArticle p{
+    text-align: center;
+    max-width: 13em;
+}
+.articleImg{
+    height: 120px;
+    width: 208px;
+}
+a{
+    color:var(--first-color);
+}
+a:hover{
+    text-decoration: underline solid 1px;
+    color:var(--first-color);
+    cursor:pointer;
+}
+
+.Mark{
+    font-size: 2em;
+}
+
+.HiddenLink{
+    color:black!important;
+}
+.HiddenLink:hover{
+    color:black;
+    text-decoration: underline solid 1px;
+}
+
+.bigButton{
+    padding:2em 5em;
+    border-radius: 10px;
+    border:1px solid black;
+    cursor:pointer;
 }
