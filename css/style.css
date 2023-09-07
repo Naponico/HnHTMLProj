@@ -106,6 +106,7 @@ article p{
     margin-top: 10px;
     background-color: var(--element-background);
     border-radius: 23% 0 0 23%;
+    max-width: 960px;
 }
 .teamLine img{
     height: 256px;
@@ -318,4 +319,12 @@ a:hover{
     border-radius: 10px;
     border:1px solid black;
     cursor:pointer;
+}
+
+p,a,span,h2,h1,li,button{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contrast{
+    color:var(--first-color)
 }
